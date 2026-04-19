@@ -1,13 +1,2 @@
-[phases.setup]
-providers = ["python"]
-nixPkgs = ["python312", "python312Packages.pip"]
-
-[phases.install]
-cmds = [
-    "python --version",
-    "python -m pip install --upgrade pip",
-    "python -m pip install -r requirements.txt",
-]
-
 [start]
 cmd = "python -m gunicorn --bind 0.0.0.0:${PORT:-5000} app:app"
