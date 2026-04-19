@@ -12,3 +12,7 @@ python app.py
 ```
 
 Then open `http://127.0.0.1:5000`.
+
+## Deploy
+
+For Coolify with Nixpacks, this project includes an explicit start command via `nixpacks.toml`.
